@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Commerce Potion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" href="assets/css/glightbox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="header row">
+            <div class="col-lg-4">
+                <img src="assets/images/logo.png" alt="Merlin's Portions">
+            </div>
+            <div class="header_search col-lg-4">
+                <input type="text" placeholder="Search our stock" name="search" id="searchProducts">
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="header_message col-lg-6">
+                        Free Shipping <br>
+                        <span>on orders over $50</span>
+                    </div>
+                    <div class="header_bag col-lg-6">
+                        <span class="header_bag_title">bag:</span>
+                        <span class="header_bag_items">1</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar row">
+            <ul>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Supplies</a></li>
+                <li><a href="#">Charms</a></li>
+                <li class="active"><a href="#">Clearance!</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header class="content_header">
+                <h3>Potions</h3>
+                <div class="listIngredients"></div>
+            </header>
+
+            <div class="products row"></div>
+            </div>
+        </main>
+
+        <footer class="footer row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="contact col-lg-5">
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Carrers</a></li>
+                        </ul>
+                    </div>
+                    <div class="socialMedia col-lg-12">
+                        <ul>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">twitter</a></li>
+                            <li><a href="#">pinterest</a></li>
+                            <li><a href="#">linkedin</a></li>
+                            <li><a href="#">google+</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright col-lg-12">
+                        &copy; Merlin's Portions. All Rights Reserverd
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter col-lg-3 col-lg-offset-2">
+                <div class="row">
+                    <h3 class="newsletter_title">Sign up for our newsletter</h3>
+                    <p class="newsletter_subtitle">Sign up for our newsletter & get exclusive discounts!</p>
+                    <div class="col-lg-8">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.footer {
+  background: #E6E6E6;
+  min-height: 100px;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    text: {
+      decoration: none;
+    }
+  }
+
+  .contact,
+  .socialMedia {
+    ul {
+      padding: 0;
+    }
+  }
+
+  .contact {
+
+    a {
+      font: {
+        size: 1.5rem;
+      }
+      
+      color: red;
+    }
+  }
+
+  .newsletter {
+    padding: 1.5rem;
+
+    border-radius: .2rem;
+
+    background: #fff;
+
+    &_title {
+      font: {
+        size: 1.5rem;
+        style: italic;
+        weight: normal;
+      }
+
+      margin: 0;
+    }
+
+    input {
+      width: 100%;
+      padding: {
+        top: .5rem;
+        bottom: .5rem;
+        left: 1rem;
+      }
+
+      border: 1px solid #333;
+      border-radius: .2rem;
+
+      color: #999;
+    }
+
+    button {
+      font: {
+        size: 1.2rem;
+      }
+      text: {
+        transform: uppercase;
+      }
+
+      display: block;
+      height: 35px;
+      width: 100%;
+
+      border: none;
+      border-radius: .2rem;
+
+      background: #D73A1E;
+      color: #fff;
+    }
+  }
+
+  .copyright {
+    color: #666;
+  }
+}

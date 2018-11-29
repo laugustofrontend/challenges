@@ -1,0 +1,53 @@
+.header {
+    padding: 1.2rem 0;
+
+    &_search {
+        input {
+            padding: {
+                top: .5rem;
+                bottom: .5rem;
+
+                left: 2rem;
+            }
+            width: 55%;
+            border: 1px solid #333;
+            border-radius: .2rem;
+        }
+    }
+
+    &_message {
+        font: {
+            size: 1.4rem;
+        }
+        text-align: center;
+
+        color: red;
+
+        span {
+            font: {
+                size: 1rem;
+            }
+        }
+    }
+
+    &_bag {
+        &_title,
+        &_items {
+            display: inline-block;
+            margin-top: .5rem;
+        }
+
+        &_title {
+            text-transform: uppercase;
+
+            color: #666;
+        }
+
+        &_items {
+            font: {
+                weight: bold;
+            }
+            color: red;
+        }
+    }
+}

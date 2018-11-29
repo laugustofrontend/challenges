@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    &::after,
+    &::before {
+        content: '';
+        clear: both;
+        display: block;
+        visibility: hidden;;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

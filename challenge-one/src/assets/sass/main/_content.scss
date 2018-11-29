@@ -1,0 +1,65 @@
+.content {
+  width: 70%;
+  margin: 0 auto;
+
+  &_header {
+    font: {
+      size: 2rem;
+    }
+
+    padding: {
+      top: 1rem;
+      right: 0;
+      bottom: 1rem;
+      left: 1.2rem;
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .products {
+    margin: 0;
+
+    &_item {
+      margin: {
+        bottom: 1rem;
+      }
+
+      &_image {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      &_title {
+        font: {
+          size: 1.2rem;
+          weight: bold;
+        }
+        text: {
+          align: center;
+        }
+      }
+
+      &_price {
+        font: {
+          size: inherit;
+        }
+
+        display: inline-block;
+
+        color: red;
+      }
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  .gslide-image img {
+    max-width: 70vh;
+  }
+  .gslide-media {
+    background: #fff;
+  }
+}
