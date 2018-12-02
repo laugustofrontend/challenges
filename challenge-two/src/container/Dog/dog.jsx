@@ -3,6 +3,8 @@ import './dog.scss'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
 
+import Canvas from './canvas'
+
 class Dog extends Component {
   constructor (props) {
     super(props)
@@ -12,7 +14,7 @@ class Dog extends Component {
       nameDog: '',
       dog: 'Beagle',
       urlImageDog: 'https://images.dog.ceo/breeds/beagle/n02088364_2652.jpg',
-      font: '',
+      font: 'Lobster',
       color: ''
     }
 
@@ -95,11 +97,11 @@ class Dog extends Component {
               <p>Escolha uma fonte</p>
               <select defaultValue="selecione" onChange={ this.handleChange } id="font"> 
                 <option value="selecione" disabled>Selecione uma Fonte</option>
-                <option value="Ubuntu">Ubuntu</option>
-                <option value="Lato">Lato</option>
-                <option value="Open Sans">Open Sans</option>
+                <option value="Lobster">Lobster</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Caveat">Caveat</option>
                 <option value="Ranga">Ranga</option>
-                <option value="Roboto">Roboto</option>
+                <option value="Satisfy">Satisfy</option>
               </select>
             </div>
             <div className="col-lg-12">
@@ -123,7 +125,11 @@ class Dog extends Component {
               { (nameDog || dog) }
             </span>
           </h2>
-          <img src={ urlImageDog } alt={ dog } />
+          <Canvas
+            urlImage={ urlImageDog }
+            nameDog= { (nameDog || dog ) }
+            font={ this.state.font }
+          />
         </div>
       </Fragment>
     )
